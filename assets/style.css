@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui;
+  display: grid;
+  place-items: center;
+}
+
+.lightBtn {
+  padding: 8px 10px;
+  border: 0;
+  background-color: black;
+  color: lightgrey;
+}
+
+.lightBtn-on {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 30px 5px rgba(45,255,196,0.9);
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.game-item {
+  background-color: lightpink;
+  width: 40px;
+  padding-block: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  color: transparent;
+}
+
+.game-item-active {
+  color: white;
+  background-color: lightskyblue;
+}
+
